@@ -1,4 +1,6 @@
 
+### a personal learning project developed to practice Python,MySQL, input validation, and secure password hashing
+
 # Python MySQL User Registration
 
 A command-line user registration application built with Python and MySQL.
