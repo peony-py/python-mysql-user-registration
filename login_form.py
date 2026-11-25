@@ -20,7 +20,14 @@ query_select = 'select * from users;'
 query_insert = 'insert into users(username,hashed_password) values(%s,%s);'
 # /////////////////////////////////////////////////////////////////////////
 username = input('enter you email: ').strip()
+if not username:
+        print('email is required')
+        raise SystemExit(1)
+
 password = input('enter your password: ')
+if not password:
+        print('password is required')
+        raise SystemExit(1)
 
 try:
     result = validate_email(username ,check_deliverability=False)
